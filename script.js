@@ -1,4 +1,4 @@
-$(document).ready(function () {
+// $(document).ready(function () {
 
         console.log('chargé');
         
@@ -8,4 +8,4 @@ $(document).ready(function () {
         if (navigator.userAgent.toLowerCase().indexOf("iphone") > -1) {
             window.location.href = 'itms-apps://apps.apple.com/app/diving-rules/id1579861867';
         }
-    });
+//   });
