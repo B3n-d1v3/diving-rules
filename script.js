@@ -1,4 +1,7 @@
 $(document).ready(function () {
+
+        console.log('chargé');
+        
         if (navigator.userAgent.toLowerCase().indexOf("android") > -1) {
             window.location.href = 'market://details?id=com.motionvolt.flipdiving';
         }
