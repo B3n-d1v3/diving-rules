@@ -8,4 +8,4 @@
   if (/ipad|iphone|ipod/i.test(navigator.userAgent)) {
     window.location.href = 'itms-apps://apps.apple.com/app/diving-rules/id1579861867'
   }
-}
+})
