@@ -1,0 +1,57 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+  
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content {
+  padding: 20px
+}
+
+#hero-banner {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  }
+
+h1 {
+  color: #363A8B;
+  }
+
+h2 {
+  color: #363A8B;
+  }
+
+.brand-color {
+  color: #363A8B;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .example {background: red;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .example {background: green;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {background: blue;}
+} 
