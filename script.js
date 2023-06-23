@@ -1,11 +1,8 @@
-(() => {
-  'use strict'
-
-   if (!(/windows phone/i.test(navigator.userAgent)) && /android/i.test(navigator.userAgent)) {
-     window.location.href = 'itms-apps://play.google.com/store/apps/details?id=com.motionvolt.flipdiving'
-   }
-
-  if (/ipad|iphone|ipod/i.test(navigator.userAgent)) {
-    window.location.href = 'itms-apps://apps.apple.com/app/diving-rules/id1579861867'
-  }
-})
+$(document).ready(function () {
+        if (navigator.userAgent.toLowerCase().indexOf("android") > -1) {
+            window.location.href = 'market://details?id=com.motionvolt.flipdiving';
+        }
+        if (navigator.userAgent.toLowerCase().indexOf("iphone") > -1) {
+            window.location.href = 'itms-apps://apps.apple.com/app/diving-rules/id1579861867';
+        }
+    });
