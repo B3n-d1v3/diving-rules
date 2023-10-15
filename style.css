@@ -2,15 +2,16 @@ html {
   height: 100%;
   width: 100%;
 }
-body{
+
+body {
   font-family: Arial, Helvetica, sans-serif;
-  margin:0;
+  margin: 0;
 }
 
 .responsive {
   max-width: 100%;
   height: auto;
-  
+
 }
 
 .center {
@@ -19,39 +20,120 @@ body{
   margin-right: auto;
 }
 
-#content {
+# {
   padding: 20px
 }
 
 #hero-banner {
-  /*position: -webkit-sticky;*/ /* Safari */
+  /*position: -webkit-sticky;*/
+  /* Safari */
   /*position: sticky;*/
   top: 0;
-  }
+}
 
 h1 {
   color: #363A8B;
-  }
+}
 
 h2 {
   color: #363A8B;
-  }
+}
 
 .brand-color {
   color: #363A8B;
 }
 
+.logo {grid-area: logo;}
+.description {grid-area: description;}
+.mobile {grid-area: mobile;}
+.advantages{grid-area: advantages;}
+.languages{grid-area: languages;}
+.share{grid-area: share;}
+.download{grid-area: download;}
+.download-ios{grid-area: download-ios; align-items: center;}
+.download-aos{grid-area: download-aos; align-items: center;}
+.privacy{grid-area: privacy;}
+.credits{grid-area: credits;}
+
+.grid-container>div {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .example {background: red;}
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+    'logo '
+    'description'
+    'advantages'
+    'mobile'
+    'languages'
+    'share'
+    'download'
+    'download-ios'
+    'download-aos'
+    'privacy'
+    'credits'
+    ;
+    gap: 25px;
+    padding: 25px;
+  }
+
+  .mobile {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .example {background: green;}
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'logo logo logo logo logo logo'
+    'description description description description description description'
+    'mobile mobile advantages advantages advantages advantages'
+    'mobile mobile languages languages languages languages'
+      'share share share share share share'
+    'download download download download download download'
+    'download-ios download-ios download-ios download-aos download-aos download-aos'
+    'privacy privacy privacy privacy privacy privacy'
+    'credits credits credits credits credits credits'
+    ;
+    gap: 25px;
+    padding: 25px;
+  }
+  
 }
+
+
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .example {background: blue;}
-} 
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+    'logo logo logo logo logo logo logo logo'
+    'description description description description mobile mobile mobile mobile'
+    'advantages advantages share share mobile mobile mobile mobile'
+    'languages languages share share mobile mobile mobile mobile'
+    'download download download download download download download download'
+    'download-ios download-ios download-ios download-ios download-aos download-aos download-aos download-aos'
+    'privacy privacy privacy privacy privacy privacy privacy privacy'
+    'credits credits credits credits credits credits credits credits'
+    ;
+    gap: 25px;
+    padding: 25px;
+  }
+
+  .share{text-align: center;}
+
+ 
+}
+
