@@ -50,8 +50,8 @@ h2 {
 .languages{grid-area: languages;}
 .share{grid-area: share;}
 .download{grid-area: download;}
-.download-ios{grid-area: download-ios; align-items: center;}
-.download-aos{grid-area: download-aos; align-items: center;}
+.download-ios{grid-area: download-ios; align-items: center; justify-content: center;}
+.download-aos{grid-area: download-aos; align-items: center; justify-content: center;}
 .privacy{grid-area: privacy;}
 .credits{grid-area: credits;}
 
